@@ -1,0 +1,13 @@
+{
+  "name": "solve-rectangle",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "node",
+    "modules"
+  ],
+  "author": "Paulo Haacke",
+  "dependencies": {
+    "yargs": "^6.6.0"
+  }
+}
