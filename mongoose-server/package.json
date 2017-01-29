@@ -1,0 +1,11 @@
+{
+  "name": "mongoose-server",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Paulo Haacke",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "mongoose": "^4.8.0"
+  }
+}
