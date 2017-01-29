@@ -2,9 +2,9 @@
   "name": "mongodb-server",
   "version": "1.0.0",
   "description": "",
-  "main": "simpleserver.js",
+  "main": "server.js",
   "scripts": {
-    "test": "node simpleserver.js"
+    "test": "node server.js"
   },
   "keywords": [
     "node",
