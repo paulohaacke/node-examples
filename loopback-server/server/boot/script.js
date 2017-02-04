@@ -7,7 +7,7 @@ module.exports = function(app) {
             { username: 'Admin', email: 'admin@admin.com', password: 'abcdef' },
             { username: 'muppala', email: 'muppala@ust.hk', password: 'abcdef' }
         ], function(err, users) {
-            if (err) return cb(err);
+            if (err) throw (err);
 
             var Role = app.models.Role;
             var RoleMapping = app.models.RoleMapping;
@@ -15,13 +15,13 @@ module.exports = function(app) {
             Role.create({
                 name: 'admin'
             }, function(err, role) {
-                if (err) cb(err);
+                if (err) throw (err);
                 //make admin
                 role.principals.create({
                     principalType: RoleMapping.USER,
                     principalId: users[0].id
                 }, function(err, principal) {
-                    if (err) throw err;
+                    if (err) throw (err);
                 });
             });
         });
